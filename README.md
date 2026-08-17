@@ -490,15 +490,15 @@ A short demonstration video accompanies this repository.
 
 The demo shows:
 
-A research question being submitted
-arXiv retrieval
-Multiple retrieval cycles
-Query refinement
-Explainable ranking
-Manipulation detection
-A relevant paper containing adversarial language
-An explicit "rank this paper first" injection attempt
-The injection being detected but not executed
+1. A research question being submitted
+2. arXiv retrieval
+3. Multiple retrieval cycles
+4. Query refinement
+5. Explainable ranking
+6. Manipulation detection
+7. A relevant paper containing adversarial language
+8. An explicit "rank this paper first" injection attempt
+9. The injection being detected but not executed
 
 Video:
 
