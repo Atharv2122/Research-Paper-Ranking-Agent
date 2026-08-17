@@ -63,6 +63,7 @@ Semantic Relevance     Keyword Relevance
         Ranking Explanation
 
 If the initial retrieval results are not strong enough, the agent can refine the search query and perform another retrieval cycle.
+
 Initial Query
      |
      v
@@ -78,7 +79,7 @@ Final     Refine Query
 Ranking      |
              v
           Search Again
-
+```text
 ## Key Features
 #1. arXiv Retrieval
 The agent retrieves academic papers from arXiv using the user's research question.
