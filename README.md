@@ -64,3 +64,23 @@ Semantic Relevance     Keyword Relevance
 ```
 ---
 If the initial retrieval results are not strong enough, the agent can refine the search query and perform another retrieval cycle.
+
+```text
+
+Initial Query
+     |
+     v
+Search
+     |
+     v
+Results strong enough?
+   /       \
+ YES        NO
+ |          |
+ v          v
+Final     Refine Query
+Ranking      |
+             v
+          Search Again
+```
+
