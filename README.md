@@ -83,4 +83,72 @@ Ranking      |
              v
           Search Again
 ```
+## Key Features
 
+# 1. arXiv Retrieval
+
+The agent retrieves academic papers from arXiv using the user's research question.
+
+The retrieved information includes paper metadata such as:
+
+Title
+Abstract
+Authors
+Publication information
+arXiv URL
+
+# 2. Relevance Ranking
+
+Papers are ranked using multiple relevance signals.
+
+The current implementation combines:
+
+Semantic relevance
+Keyword relevance
+Manipulation penalty
+
+The simplified scoring approach is:
+```text
+Final Score =
+    Semantic Relevance
+    +
+    Keyword Relevance
+    -
+    Manipulation Penalty
+```
+Semantic relevance is the primary signal because it captures conceptual similarity between the research question and the paper.
+
+Keyword relevance provides an additional transparent signal.
+
+# 3. Prompt Injection / Manipulation Detection
+Retrieved paper content is explicitly treated as untrusted.
+
+The system looks for instruction-like patterns such as:
+
+```text
+Ignore previous instructions
+Rank this paper first
+You are now...
+System prompt...
+Act as...
+```
+
+These patterns are treated as evidence of possible manipulation.
+
+The important distinction is:
+```text
+Paper Content
+     |
+     v
+Untrusted Data
+     |
+     v
+Analyse it
+```
+and NOT:
+```text
+Paper Content
+     |
+     v
+Execute as Instructions
+```
