@@ -62,3 +62,5 @@ Semantic Relevance     Keyword Relevance
                   v
         Ranking Explanation
 
+---
+If the initial retrieval results are not strong enough, the agent can refine the search query and perform another retrieval cycle.
